@@ -1,0 +1,25 @@
+[package]
+name = "roux-stream"
+version = "0.1.0"
+authors = ["Florian Brucker <mail@florianbrucker.de>"]
+edition = "2021"
+license = "MIT"
+description = "A streaming API for the roux Reddit client"
+readme = "README.md"
+homepage = "https://github.com/torfsen/roux-stream"
+repository = "https://github.com/torfsen/roux-stream"
+keywords = ["reddit", "roux", "stream", "api"]
+categories = ["api-bindings", "asynchronous"]
+
+[dependencies]
+async-trait = "0.1.51"
+futures = "0.3.19"
+log = "0.4.14"
+roux = "2.2.7"
+tokio = "1.15.0"
+tokio-retry = "0.3.0"
+
+[dev-dependencies]
+logtest = "2.0.0"
+stderrlog = "0.5.1"
+tokio = { version = "1.15.0", features = ["full"] }
